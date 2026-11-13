@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Facilities of Charsadda – Web GIS</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sports Grounds, Stadiums and Recreation Sites of Charsadda</h1>
+    <p>Web GIS Applications (MET418) – Midterm Project | Muhammad Mujtaba | FA23-BRG-045</p>
+  </header>
+
+  <div id="container">
+    <aside id="sidebar">
+      <h2>About the Study Area</h2>
+      <p>Charsadda is a district in Khyber Pakhtunkhwa, Pakistan, lying in the Peshawar valley
+         along the Kabul and Swat rivers. This map shows sports grounds, stadiums and
+         recreational sites stored in a PostgreSQL/PostGIS database.</p>
+      <p><strong>Total locations:</strong> <span id="count">0</span></p>
+      <p class="note">No zoos were found in the study area.</p>
+
+      <h2>All Locations</h2>
+      <div id="locationList"></div>
+    </aside>
+    <div id="map"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
